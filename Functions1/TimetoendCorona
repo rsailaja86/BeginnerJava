@@ -1,0 +1,43 @@
+Java
+public class Solution {
+    public int solve(int A, int B, int C) {
+        int count=0;
+        while(C>0){
+         C=C+B;//current cases=activecases+newcases
+         C=C-A;//current cases=activecases-recovercases
+         count++;
+        }
+        return count;
+    }
+}
+
+public class Solution {
+    public int solve(int A, int B, int C) {
+        int days = 0;
+        while (C > 0) {
+            // Adding B to C
+            C += B;
+            // Subtracting A from C
+            C -= A;
+            days += 1;
+        }
+        return days;
+    }
+}
+
+Python
+
+class Solution:
+    # @param A : integer
+    # @param B : integer
+    # @param C : integer
+    # @return an integer
+    def solve(self, A, B, C):
+        days = 0
+        while C > 0:
+            # Adding B to C
+            C += B
+            # Subtracting A from C
+            C -= A
+            days += 1
+        return days

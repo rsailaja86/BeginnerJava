@@ -1,0 +1,13 @@
+Java
+
+public static double solve(double celsius) {
+    double farenheit = ((9d/5d)*celsius) + 32;
+    double ans = Math.round(farenheit*100)/100d;
+    return ans;
+}
+
+Python
+def celsius_farhen(Celsius) :
+    Fahrenheit = ((9/5)*Celsius) + 32
+    ans = round(Fahrenheit ,2)
+    return ans

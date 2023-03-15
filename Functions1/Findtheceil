@@ -1,0 +1,17 @@
+Python:
+
+class Solution:
+    # @param A : integer
+    # @return an integer
+    def solve(self, A):
+        A /= 200.00
+        return math.ceil(A)
+Java:
+
+public class Solution {
+    public int solve(int A) {
+        double B = A;
+        B /= (double)200.00;
+        return (int)Math.ceil(B);
+    }
+}

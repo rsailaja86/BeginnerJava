@@ -1,0 +1,27 @@
+Java
+
+public class Solution {
+    public int solve(int A, int B) {
+        double res = (double) A * 100 / B;
+        return (int)Math.ceil(res);
+    }
+}
+
+public class Solution {
+    public int solve(int A, int B) {
+        float percentage = (A * 100.0F) / B;
+        int ans = (int)Math.ceil(percentage);
+        return ans;
+    }
+}
+
+Python
+
+class Solution:
+    # @param A : integer
+    # @param B : integer
+    # @return an integer
+    def solve(self, A, B):
+        percentage = (A * 100) / B
+        ans = math.ceil(percentage)
+        return ans
