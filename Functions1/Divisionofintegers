@@ -1,0 +1,18 @@
+Java
+
+public class Solution {
+    // DO NOT MODIFY THE ARGUMENTS WITH "final" PREFIX. IT IS READ ONLY
+    public int divide(final int A, final int B) {
+        return (A / B);
+    }
+}
+
+Python
+
+class Solution:
+    # @param A : integer
+    # @param B : integer
+    # @return an integer
+    def divide(self, A, B):
+        # print just A//B
+        return A // B

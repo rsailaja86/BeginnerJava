@@ -1,0 +1,17 @@
+Java
+
+public class Solution {
+    public int solve(int A, int B) {
+        return A * B;
+    }
+}
+
+Python
+
+class Solution:
+    # @param A : integer
+    # @param B : integer
+    # @return an integer
+    def solve(self, A, B):
+        # print just A*B
+        return A*B

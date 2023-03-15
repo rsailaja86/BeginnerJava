@@ -1,0 +1,24 @@
+Java
+
+public class Solution {
+    public int solve(int A) {
+        // intialise the fact variable by 1
+        int fact = 1;
+        // start iteration from 1 to n, and make fact.
+        for(int i = 1; i <= A; i++) {
+            fact *= i;
+        }
+        return fact;
+    }
+}
+
+Python
+
+class Solution:
+    # @param A : integer
+    # @return an integer
+    def solve(self, A):
+        fact = 1
+        for i in range(1, A+1):
+            fact *= i
+        return fact

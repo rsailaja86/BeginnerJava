@@ -1,0 +1,17 @@
+Java
+
+public class Solution {
+    // DO NOT MODIFY THE ARGUMENTS WITH "final" PREFIX. IT IS READ ONLY
+    public int cube(final int A) {
+        return (A * A * A);
+    }
+}
+
+Python
+
+class Solution:
+    # @param A : integer
+    # @return an integer
+    def cube(self, A):
+        # return A*A*A
+        return (A * A * A)
