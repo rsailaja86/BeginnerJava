@@ -1,0 +1,77 @@
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // YOUR CODE GOES HERE
+        // Please take input and print output to standard input/output (stdin/stdout)
+        // DO NOT USE ARGUMENTS FOR INPUTS
+        // E.g. 'Scanner' for input & 'System.out' for output
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        for (int i = 1; i <= N; i++) {
+            int totalstar = i;
+            for (int star = 1; star <= totalstar; star++) {
+                System.out.print("*");
+            }
+            for (int space = 1; space <= 2*(N-i); space++) {
+                System.out.print(" ");
+            }
+            for (int rightstar = 1; rightstar <= i; rightstar++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+
+import java.util.*;
+
+class Main {
+
+    public static void main(String args[]) {
+        Scanner scn = new Scanner(System.in);
+        
+        int n = scn.nextInt();
+        
+        // Loop for N rows
+        for(int i=1;i<=n;i++){ 
+            
+            // Print i stars
+            for(int j=1;j<=i;j++) {
+                System.out.print("*");
+            }
+            
+            // Print 2*(n-i) spaces
+            for(int j=1;j<=2*(n-i);j++) {
+                System.out.print(" ");
+            }
+            
+            // Print i stars
+            for(int j=1;j<=i;j++) {
+                System.out.print("*");
+            }
+            
+            System.out.println();
+        }
+    }
+
+}
+
+Python
+
+def main():
+    n = int(input())
+    # Loop for N rows
+    for i in range(1, n+1):
+        # Print i stars
+        print('*'*(i), end = '')
+        # Print 2*(n-i) spaces
+        print(' '*((n - i)*2), end = '')
+        # Print i stars
+        print('*'*(i), end = '')
+        print()
+    return 0
+
+if __name__ == '__main__':
+    main()

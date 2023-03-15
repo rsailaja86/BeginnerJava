@@ -1,0 +1,59 @@
+Java
+
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // YOUR CODE GOES HERE
+        // Please take input and print output to standard input/output (stdin/stdout)
+        // DO NOT USE ARGUMENTS FOR INPUTS
+        // E.g. 'Scanner' for input & 'System.out' for output
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        int M = sc.nextInt();
+        for (int i = 1; i <= N; i++) {
+            for (int j = 1; j <= M; j++) {
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+    }
+}
+
+import java.util.*;
+
+class Main {
+
+    public static void main(String args[]) {
+        Scanner scn = new Scanner(System.in);
+        
+        int n = scn.nextInt();
+        int m = scn.nextInt();
+        
+        // Loop for N rows
+        for(int i=1;i<=n;i++){
+            
+            // Loop for M columns
+            for(int j=1;j<=m;j++) {
+                System.out.print("*");
+            }
+            
+            System.out.println();
+        }
+    }
+
+}
+
+Python
+
+def main():
+    N = int(input())
+    M = int(input())
+    // Loop from 0 to N-1
+    for i in range(N):
+        print('*'*M)
+    return 0
+
+if __name__ == '__main__':
+    main()

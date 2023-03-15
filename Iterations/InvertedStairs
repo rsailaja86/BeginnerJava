@@ -1,0 +1,61 @@
+Java
+
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // YOUR CODE GOES HERE
+        // Please take input and print output to standard input/output (stdin/stdout)
+        // DO NOT USE ARGUMENTS FOR INPUTS
+        // E.g. 'Scanner' for input & 'System.out' for output
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        for (int i = 1; N >= i; i++) {
+            for (int j = N; j >= i; j--) {
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+    }
+}
+
+import java.util.*;
+
+class Main {
+
+    public static void main(String args[]) {
+        Scanner scn = new Scanner(System.in);
+        
+        int n = scn.nextInt();
+        
+        // Loop for N rows
+        for(int i = 0; i < n; i++){
+        
+            // Loop for n-i stars
+            for(int j = 0; j < n-i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+}
+
+Python
+
+def main():
+    # YOUR CODE GOES HERE
+    # Please take input and print output to standard input/output (stdin/stdout)
+    # E.g. 'input()/raw_input()' for input & 'print' for output
+    N = int(input())
+    # Loop from N rows
+    for i in range(N):
+        # Loop for n-i stars
+        for j in range(N-i):
+            print('*', end = '')
+        print()    
+    return 0
+
+if __name__ == '__main__':
+    main()
