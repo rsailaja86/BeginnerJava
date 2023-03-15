@@ -1,0 +1,16 @@
+Java:
+public class Solution {
+    public int solve(int A, int B, int C) {
+        int volume = A * B * C;
+        return volume;
+    }
+}
+
+Python:
+class Solution:
+    # @param A : integer
+    # @param B : integer
+    # @param C : integer
+    # @return an integer
+    def solve(self, A, B, C):
+        return A * B * C
