@@ -1,0 +1,71 @@
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // YOUR CODE GOES HERE
+        // Please take input and print output to standard input/output (stdin/stdout)
+        // DO NOT USE ARGUMENTS FOR INPUTS
+        // E.g. 'Scanner' for input & 'System.out' for output
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        for (int i = 1; i <= N; i++) {
+            for (int j = 1; j <= i; j++) {
+                if ( j == 1) {
+                    System.out.print(j);
+                } 
+                else if (j % 2 == 0) {
+                    System.out.print(" ");
+                } 
+                else {
+                    System.out.print(j);
+                }   
+            }
+            System.out.println("");
+        }
+    }
+}
+
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        // Loop upto N
+        for (int i = 1; i <= N; i++) {
+            // Loop upto i
+            for (int j = 1; j <= i; j++) {
+                //print j for odd
+                if ((j % 2) == 1)
+                    System.out.print(j);
+                // print space for even
+                else
+                    System.out.print(" ");
+            }
+            System.out.print("\n");
+        }
+    }
+}
+
+Python
+
+def main():
+    N = int(input())
+    # Loop upto N
+    for i in range(1, N + 1):
+        # Loop upto i
+        for j in range(1, i + 1):
+            # print j for odd
+            if j % 2 == 1:
+                print(j, end="")
+            # print space for even
+            else:
+                print(" ", end="")
+        print()
+    return 0
+
+
+if __name__ == "__main__":
+    main()
