@@ -1,0 +1,7 @@
+public class Solution {
+    public int solve(int A) {
+        double area = Math.PI * A * A;
+        int res = (int)Math.ceil(area);
+        return res;
+    }
+}
