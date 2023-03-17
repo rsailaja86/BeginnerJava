@@ -1,0 +1,14 @@
+class Main {
+   static int smaller(int a,int b) {
+       if(a < b) {
+           return a;
+       }
+       else {
+           return b;
+       }
+   }
+   public static void main(String args[]) {
+       int a = 20,b = 45;
+       smaller(a,b);
+   }
+}
