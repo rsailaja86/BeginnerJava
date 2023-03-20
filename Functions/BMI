@@ -1,0 +1,83 @@
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static float bmi(double h,double w) {
+        double BMI = w *100 * 100 / (h * h);
+        if (BMI < 18.5) {
+            System.out.println("Underweight");
+        }
+        else if ( BMI <= 24.9) {
+            System.out.println("Normal weight");
+        }
+        else if (BMI <= 29.9) {
+            System.out.println("Overweight");
+        }
+        else {
+            System.out.println("Obese");
+        }
+        System.out.println((int)(BMI * 10 + 0.5) / 10d);
+        return (float) BMI;
+    }
+public static void main(String[] args) {
+    // YOUR CODE GOES HERE
+    // Please take input and print output to standard input/output (stdin/stdout)
+    // DO NOT USE ARGUMENTS FOR INPUTS
+    // E.g. 'Scanner' for input & 'System.out' for output
+    Scanner sc = new Scanner(System.in);
+    double height = sc.nextDouble();
+    double weight = sc.nextDouble();
+    bmi( height, weight);
+}
+}
+
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // YOUR CODE GOES HERE
+        // Please take input and print output to standard input/output (stdin/stdout)
+        // DO NOT USE ARGUMENTS FOR INPUTS
+        // E.g. 'Scanner' for input & 'System.out' for output
+        Scanner sc = new Scanner(System.in);
+        double height = sc.nextDouble();
+        double weight = sc.nextDouble();
+        double BMI = weight * 100 * 100/(height * height);
+        if (BMI < 18.5) {
+            System.out.println("Underweight");
+        }
+        else if ( BMI <= 24.9) {
+            System.out.println("Normal weight");
+        }
+        else if (BMI <= 29.9) {
+            System.out.println("Overweight");
+        }
+        else {
+            System.out.println("Obese");
+        }
+        System.out.println((int)(BMI * 10 + 0.5) / 10d);
+        
+    }
+}
+
+def main():
+    A = float(input())
+    B = float(input())
+    height = A / 100
+    BMI = B / (height * height)
+    BMI = round(BMI, 1)
+    # Use if, elif and else to check range of BMI
+    if BMI < 18.5:
+        print("Underweight")
+    elif BMI >= 18.5 and BMI <= 24.9:
+        print("Normal")
+    elif BMI > 24.9 and BMI <= 29.9:
+        print("Overweight")
+    else:
+        print("Obese")
+    print(BMI)
+
+
+if __name__ == "__main__":
+    main()
