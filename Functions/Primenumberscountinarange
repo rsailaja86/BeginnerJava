@@ -1,0 +1,23 @@
+public class Solution {
+    public static boolean isprime(int N) {
+        int fcount = 0;
+        for (int i = 1; i <= N; i++) {
+            if (N % i == 0) {
+                fcount++;
+            }
+            if (fcount > 2) {
+                break;
+            }
+        }
+        return fcount == 2;
+    }
+    public int solve(int A, int B) {
+        int count = 0;
+        for (int i = A; i <= B; i++) {
+            if (isprime(i)) {
+                count++;
+            }
+        }
+        return count;
+    }
+}
