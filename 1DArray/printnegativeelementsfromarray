@@ -1,0 +1,34 @@
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // YOUR CODE GOES HERE
+        // Please take input and print output to standard input/output (stdin/stdout)
+        // DO NOT USE ARGUMENTS FOR INPUTS
+        // E.g. 'Scanner' for input & 'System.out' for output
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[]A = new int[n];
+        for (int i = 0; i < n; i++) {
+            A[i] = sc.nextInt();
+        }
+        for (int i = 0; i < n; i++) {
+            if (A[i] < 0) {
+                System.out.print(A[i]+ " ");
+            }
+        }
+    }
+}
+
+def main():
+    inp = list(map(int,input().split()))
+    N = inp[0]
+    # looping from 1 to N
+    for i in range(1, N+1):
+        if inp[i] < 0:
+            print(inp[i],end=' ')  
+    return 0
+
+if __name__ == '__main__':
+    main()

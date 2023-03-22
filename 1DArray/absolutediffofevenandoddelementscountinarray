@@ -1,0 +1,66 @@
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // YOUR CODE GOES HERE
+        // Please take input and print output to standard input/output (stdin/stdout)
+        // DO NOT USE ARGUMENTS FOR INPUTS
+        // E.g. 'Scanner' for input & 'System.out' for output
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+        while (T > 0) {
+            int n = sc.nextInt();
+            int[]A = new int[n];
+            for (int i = 0; i < n; i++) {
+                A[i] = sc.nextInt();
+            }
+            int evencount = 0;
+            int oddcount = 0;
+            for (int i = 0; i < n; i++) {
+                if (A[i]  % 2 == 0) {
+                    evencount++;
+                }
+                else {
+                    oddcount++;
+                }
+            }	
+            int res = evencount - oddcount;
+            if (res < 0) {
+                res *= -1;
+		        System.out.println(res);
+            }
+	        else {
+                System.out.println(res);
+	         }
+            T--;
+        }    	
+    }
+}
+
+def main():
+    # YOUR CODE GOES HERE
+    # Please take input and print output to standard input/output (stdin/stdout)
+    # E.g. 'input()/raw_input()' for input & 'print' for output
+    T = int(input())
+    while T > 0:
+        A = input().split()
+        cnte = 0
+        cnto = 0
+        N = int(A[0])
+        # looping from 1 to N
+        for i in range(1, N + 1):
+            A[i] = int(A[i])
+            # if remainder is 1 then number is odd
+            if A[i] % 2 == 1:
+                cnto+=1
+            # else number is even
+            else:
+                cnte+=1
+                
+        print(abs(cnte - cnto))
+        T -= 1
+    return 0
+
+if __name__ == '__main__':
+    main()

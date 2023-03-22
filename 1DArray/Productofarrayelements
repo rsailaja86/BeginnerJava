@@ -1,0 +1,15 @@
+public static long solve(int[] arr) {
+    // Complete the function template here
+    long product = 1;
+    for (int i = 0; i < arr.length; i++) {
+        product *= arr[i]; 
+    }
+    return product;
+}
+
+def product(lst):
+    result = 1
+    # iterating over lst to find product
+    for idx in range(len(lst)):
+         result = result * lst[idx]
+    return result

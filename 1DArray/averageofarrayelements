@@ -1,0 +1,39 @@
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // YOUR CODE GOES HERE
+        // Please take input and print output to standard input/output (stdin/stdout)
+        // DO NOT USE ARGUMENTS FOR INPUTS
+        // E.g. 'Scanner' for input & 'System.out' for output
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        int[]rain = new int[N];
+        for (int i = 0; i < N; i++) {
+            rain[i] = sc.nextInt();
+        }
+        int sum = 0;
+        for (int i = 0; i < N; i++) {
+            sum += rain[i];
+        }
+        double average = sum / N;
+        System.out.print((int)Math.floor(average));
+    }
+}
+
+def main():
+    # Take N from user for size of array
+    N = int(input())
+    # Create array of size N for rainfall
+    arr = list(map(int, input().split()))
+    # Find sum of total data
+    total = 0
+    for i in arr:
+        total += i
+    # Find average
+    average = total / N
+    print(int(average))
+
+if __name__ == '__main__':
+    main()

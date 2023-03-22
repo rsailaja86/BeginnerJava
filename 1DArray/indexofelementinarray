@@ -1,0 +1,21 @@
+public class Solution {
+    public int solve(int[] A, int B) {
+        for (int i = 0; i < A.length; i++) {
+            if ( A[i] == B)
+                return i;     
+        }
+        return -1;
+    }
+}
+
+class Solution:
+    # @param A : list of integers
+    # @param B : integer
+    # @return an integer
+    def solve(self, A, B):
+        pos = -1
+        for i in range(len(A)):
+            if A[i] == B:
+                pos = i
+                break
+        return pos

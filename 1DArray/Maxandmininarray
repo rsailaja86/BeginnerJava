@@ -1,0 +1,54 @@
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // YOUR CODE GOES HERE
+        // Please take input and print output to standard input/output (stdin/stdout)
+        // DO NOT USE ARGUMENTS FOR INPUTS
+        // E.g. 'Scanner' for input & 'System.out' for output
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int []A = new int [n];
+        for (int i = 0; i < A.length; i++) {
+            A[i] = sc.nextInt();
+        }
+        int min=A[0];
+        int max=A[0];
+        for(int i = 0; i < A.length; i++){
+            if(A[i] < min){
+                min = A[i];
+            }
+            else if(A[i] > max){
+                max = A[i];
+            }
+        } 
+        System.out.print(max+ " "+min);
+    }
+}
+
+def main():
+    # YOUR CODE GOES HERE
+    # Please take input and print output to standard input/output (stdin/stdout)
+    # E.g. 'input()/raw_input()' for input & 'print' for output
+    
+    # Accept inputs.
+    inp = list(map(int,input().split()))
+    N = inp[0]
+    inp = inp[1:]
+    
+    # Find the minimum and maximum elements.
+    max_element = -1
+    min_element = 10001
+    # iterating over inp
+    for x in inp:
+        if x > max_element:
+            max_element = x
+        if x < min_element:
+            min_element = x
+    print(max_element, end = " ")
+    print(min_element, end = '')
+    return 0
+
+if __name__ == '__main__':
+    main()

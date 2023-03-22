@@ -1,0 +1,32 @@
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // YOUR CODE GOES HERE
+        // Please take input and print output to standard input/output (stdin/stdout)
+        // DO NOT USE ARGUMENTS FOR INPUTS
+        // E.g. 'Scanner' for input & 'System.out' for output
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        int[]A = new int[N];
+        for (int i = 0; i < A.length; i++) {
+            A[i] = sc.nextInt();
+        }
+        for (int i = N-1; i >= 0; i--) {
+            System.out.print(A[i] + " ");
+        }
+    }
+}
+
+def main():
+    inputs = input().split()
+    N = int(inputs[0])
+    inp = list(map(int, inputs[1:]))
+    for i in range(N-1, -1, -1):
+        # Printing in reverse order
+        print(inp[i],end=' ')
+    return 0
+
+if __name__ == '__main__':
+    main()

@@ -1,0 +1,45 @@
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // YOUR CODE GOES HERE
+        // Please take input and print output to standard input/output (stdin/stdout)
+        // DO NOT USE ARGUMENTS FOR INPUTS
+        // E.g. 'Scanner' for input & 'System.out' for output
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        int[]arr = new int[N];
+        for ( int i = 0; i < arr.length; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int Max = arr[0];
+        int Min = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > Max) {
+                Max = arr[i];
+            } 
+            else if (arr[i] < Min) {
+                Min = arr[i];
+            }
+        } 
+        System.out.print(Max - Min);
+    }
+}
+
+def main():
+    N = int(input())
+    # Taking N inputs
+    arr = list(map(int, input().split()))
+    Max = arr[0]
+    Min = arr[0]
+    
+    for i in arr:
+        if i > Max:
+            Max = i
+        if i < Min:
+            Min = i
+    print(Max - Min)
+
+if __name__ == '__main__':
+    main()
