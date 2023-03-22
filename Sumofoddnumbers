@@ -18,3 +18,15 @@ public class Main {
         System.out.print(sum);
     }
 }
+// other approach
+public class Solution {
+    public int solve(int A) {
+        int sum = 0;
+        for (int n = 1; n <= A; n++) {
+            if (n % 3 == 0 || n % 5 == 0){
+                sum += n;
+            }
+        }
+        return sum;
+    }
+}
