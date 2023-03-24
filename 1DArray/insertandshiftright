@@ -1,0 +1,71 @@
+// With function
+import java.util.*;
+class Main {
+	public static void print(int[]arr) {
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i]+" ");
+		}
+		System.out.println();
+	}
+	public static int[] insertThat(int[]arr,int x, int y) {
+		int n = arr.length;
+		int[] narr = new int[n + 1];
+		//copy each element from 0 to x-2 from 1st array to new array
+		for (int i = 0; i <= x - 2; i++) {
+			narr[i] = arr[i];
+		}
+		//set elemnet y at x-1 index in new array
+		narr[x - 1] = y;
+		// copy elements from x-1 to n-1 into new array
+		for ( int i = x - 1; i < n; i++) {
+			narr[i+1] = arr[i];
+		}
+		return narr;	
+	}
+	public static void main(String args[]) {
+		// Your code goes here
+		Scanner sc =  new Scanner(System.in);
+		int n = sc.nextInt();
+		int[]arr = new int[n];
+		for (int i = 0; i < n; i++) {
+			arr[i] = sc.nextInt();
+		}
+		int x = sc.nextInt();
+		int y = sc.nextInt();
+		int[] res = insertThat(arr, x, y);
+		print(res);
+	}
+}
+
+// with out function
+
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // YOUR CODE GOES HERE
+        // Please take input and print output to standard input/output (stdin/stdout)
+        // DO NOT USE ARGUMENTS FOR INPUTS
+        // E.g. 'Scanner' for input & 'System.out' for output
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        for(int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int X = sc.nextInt();
+        int Y = sc.nextInt();
+        int narr[] = new int[n+1];
+        for(int i=0; i < narr.length; i++) {
+            if(i < X - 1)
+            narr[i] = arr[i];
+            else if(i==X-1)
+            narr[i] = Y;
+            else
+            narr[i] = arr[i-1];
+
+            System.out.print(narr[i]+" ");
+        }
+    }
+}

@@ -1,0 +1,12 @@
+// with out changing original function
+
+public class Solution {
+    public int[] solve(int[] A) {
+        int n = A.length;
+        int[]rarr = new int[n];
+        for (int i = n-1; i >= 0; i--) {
+            rarr[n-1-i] = A[i];
+        }
+        return rarr;
+    }
+}
